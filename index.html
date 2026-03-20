@@ -51,9 +51,10 @@
         font-size: 18px;
       }
 
+      /* ★変更① 横幅を700pxに */
       .section {
         padding: 70px 20px;
-        max-width: 800px;
+        max-width: 700px;
         margin: auto;
       }
 
@@ -62,6 +63,9 @@
         margin-bottom: 30px;
         font-size: 26px;
         font-weight: 700;
+
+        /* ★変更③ 強調色 */
+        color: #ff7a00;
       }
 
       .problem h2 {
@@ -70,6 +74,11 @@
 
       ul {
         padding-left: 20px;
+      }
+
+      /* ★変更② 文章の余白追加 */
+      p {
+        margin-bottom: 18px;
       }
 
       .qa {
@@ -116,6 +125,11 @@
         padding: 30px;
       }
 
+      /* ★変更③ 強調テキスト用 */
+      strong {
+        color: #ff7a00;
+      }
+
       @media (max-width: 768px) {
         .mobile-cta {
           display: block;
@@ -147,6 +161,13 @@
 
         .problem h2 {
           font-size: 26px;
+        }
+      }
+
+      /* ★変更⑤ PCでは下部CTA非表示 */
+      @media (min-width: 769px) {
+        .mobile-cta {
+          display: none !important;
         }
       }
     </style>
@@ -230,7 +251,6 @@
 
       <p>
         はじめまして。<br />
-        <!-- ★変更箇所 -->
         「simple
         works」で、業務効率化や業務が回る仕組みづくりのサポートをしております、平と申します。
       </p>
