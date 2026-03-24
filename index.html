@@ -37,8 +37,8 @@
       }
 
       .hero h1 {
-        font-size: 40px; /* ★変更：36→40 */
-        font-weight: 900; /* ★追加 */
+        font-size: 40px;
+        font-weight: 900;
         margin-bottom: 20px;
       }
 
@@ -67,15 +67,15 @@
       .section h2 {
         text-align: center;
         margin-bottom: 30px;
-        font-size: 30px; /* ★変更：26→30 */
-        font-weight: 900; /* ★変更：700→900 */
-        letter-spacing: 0.5px; /* ★追加 */
-        line-height: 1.4; /* ★追加 */
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        line-height: 1.4;
         color: #ff7a00;
       }
 
       .problem h2 {
-        font-size: 34px; /* ★変更：30→34（さらに強調） */
+        font-size: 34px;
       }
 
       ul {
@@ -132,7 +132,7 @@
 
       strong {
         color: #ff7a00;
-        font-weight: 900; /* ★変更：強調強化 */
+        font-weight: 900;
       }
 
       @media (max-width: 768px) {
@@ -148,7 +148,11 @@
           z-index: 999;
         }
 
+        /* ★変更：ここが今回の本質 */
         .mobile-cta a {
+          display: block;          /* ←追加：幅100%にする */
+          width: 100%;             /* ←追加 */
+          text-align: center;      /* ←中央寄せを確実に */
           color: white;
           font-weight: bold;
           font-size: 18px;
@@ -161,11 +165,11 @@
         }
 
         .section h2 {
-          font-size: 24px; /* ★変更：22→24（スマホでも強く） */
+          font-size: 24px;
         }
 
         .problem h2 {
-          font-size: 28px; /* ★変更：26→28 */
+          font-size: 28px;
         }
       }
 
@@ -255,8 +259,7 @@
 
       <p>
         はじめまして。<br />
-        「simple
-        works」で、業務効率化や業務が回る仕組みづくりのサポートをしております、平と申します。
+        「simple works」で、業務効率化や業務が回る仕組みづくりのサポートをしております、平と申します。
       </p>
 
       <p>
@@ -409,7 +412,6 @@
       <p>© 業務設計・業務改善サポート</p>
     </footer>
 
-    <!-- ★変更：スマホCTAを2行に -->
     <div class="mobile-cta">
       <a href="#contact">
         60分の課題整理ミーティング<br />
