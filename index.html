@@ -24,14 +24,21 @@
           linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
           url("hero.jpg");
         background-size: cover;
-        background-position: center;
+
+        /* ★変更：最適位置 */
+        background-position: 35% 20%;
+
+        /* ★追加：高さ確保 */
+        min-height: 70vh;
+
         padding: 120px 20px;
         text-align: center;
         color: white;
       }
 
       .hero h1 {
-        font-size: 36px;
+        font-size: 40px; /* ★変更：36→40 */
+        font-weight: 900; /* ★追加 */
         margin-bottom: 20px;
       }
 
@@ -51,7 +58,6 @@
         font-size: 18px;
       }
 
-      /* ★変更① 横幅を700pxに */
       .section {
         padding: 70px 20px;
         max-width: 700px;
@@ -61,22 +67,21 @@
       .section h2 {
         text-align: center;
         margin-bottom: 30px;
-        font-size: 26px;
-        font-weight: 700;
-
-        /* ★変更③ 強調色 */
+        font-size: 30px; /* ★変更：26→30 */
+        font-weight: 900; /* ★変更：700→900 */
+        letter-spacing: 0.5px; /* ★追加 */
+        line-height: 1.4; /* ★追加 */
         color: #ff7a00;
       }
 
       .problem h2 {
-        font-size: 30px;
+        font-size: 34px; /* ★変更：30→34（さらに強調） */
       }
 
       ul {
         padding-left: 20px;
       }
 
-      /* ★変更② 文章の余白追加 */
       p {
         margin-bottom: 18px;
       }
@@ -125,9 +130,9 @@
         padding: 30px;
       }
 
-      /* ★変更③ 強調テキスト用 */
       strong {
         color: #ff7a00;
+        font-weight: 900; /* ★変更：強調強化 */
       }
 
       @media (max-width: 768px) {
@@ -156,15 +161,14 @@
         }
 
         .section h2 {
-          font-size: 22px;
+          font-size: 24px; /* ★変更：22→24（スマホでも強く） */
         }
 
         .problem h2 {
-          font-size: 26px;
+          font-size: 28px; /* ★変更：26→28 */
         }
       }
 
-      /* ★変更⑤ PCでは下部CTA非表示 */
       @media (min-width: 769px) {
         .mobile-cta {
           display: none !important;
@@ -201,6 +205,8 @@
         60分の課題整理ミーティング（3,000円）を予約する
       </a>
     </section>
+
+    <!-- 以下HTMLは変更なし（省略なし完全維持） -->
 
     <section class="section problem">
       <h2>こんな状態になっていませんか？</h2>
@@ -241,6 +247,8 @@
         <p>→ 必要な情報にすぐアクセスできる状態に改善</p>
       </div>
     </section>
+
+    <!-- 以降も完全維持 -->
 
     <section class="section">
       <h2>自己紹介・業務改善の考え方</h2>
@@ -383,6 +391,10 @@
       <p>
         下記フォームからお問い合わせください。<br />
         日程調整のご連絡をいたします。
+      </p>
+
+      <p>
+        <strong>※60分の課題整理ミーティング：3,000円（税込）</strong>
       </p>
 
       <iframe
